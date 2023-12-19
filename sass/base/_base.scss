@@ -1,0 +1,25 @@
+html{
+    font-size: $font-standard-proportions;
+    max-width: $global-page-max-width;
+    margin: 0 auto;
+    @include desktop-screens{
+        max-width: 100%;
+    }
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: $color-bg-standard;
+    @include font-package(standard);
+}
+
+main{
+    margin: 0 auto;
+    padding : 0 $mobile-right_left-margins;
+    width: 100%;
+    @include desktop-screens{
+        padding: 0 $desktop-right_left-margins;
+        max-width: $main-max-width;
+    }
+}

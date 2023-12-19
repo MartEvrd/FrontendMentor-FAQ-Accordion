@@ -4,7 +4,8 @@
   "description": "faq-accordion project within Frontend Mentor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch sass/style.scss:css/style.css --style expanded",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.css -o css/style.prefix.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MartEvrd/FrontendMentor-FAQ-Accordion/issues"
   },
-  "homepage": "https://github.com/MartEvrd/FrontendMentor-FAQ-Accordion#readme"
+  "homepage": "https://github.com/MartEvrd/FrontendMentor-FAQ-Accordion#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
 }

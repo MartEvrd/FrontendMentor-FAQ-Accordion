@@ -1,0 +1,10 @@
+header{
+    width: 100%;
+    height: 30vh;
+    position: sticky;
+    background-image: url("../../assets/images/background-pattern-mobile.svg");
+    @include desktop-screens{
+        height: 35vh;
+        background-image: url("../../assets/images/background-pattern-desktop.svg");
+    }
+}

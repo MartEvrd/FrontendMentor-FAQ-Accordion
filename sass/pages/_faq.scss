@@ -1,0 +1,61 @@
+.faq-container{
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: $color-primary;
+    width: 100%;
+    // height: 50vh;
+    border-radius: 10px;
+    position: relative;
+    top: -70px;
+    box-shadow:rgba(48, 21, 52, 0.15) 0px 8px 15px 1px;
+    @include desktop-screens{
+        padding: 30px 30px;
+        border-radius: 20px;
+        top: -120px;
+    }
+    // -- TITRE
+    &__header{
+        display: flex;
+        column-gap: 30px;
+        margin-bottom: 15px;
+        & img{
+            width: 30px;
+            @include desktop-screens{
+                width: 35px;
+            }
+        }
+        & h1{
+            @include font-package(title);
+            @include desktop-screens{
+                @include font-package-desktop(title);
+            }
+        }
+    }
+    // -- SECTIONS
+    &__section{
+        margin-top: 15px;
+        &-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            & h2{
+                @include font-package(section);
+                @include desktop-screens{
+                    @include font-package-desktop(section);
+                }
+            }
+            & img{
+                &:hover{
+                    cursor: pointer;
+                }
+                
+            }
+        }
+        &-content{
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+    }
+}

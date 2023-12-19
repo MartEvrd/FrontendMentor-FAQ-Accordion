@@ -1,0 +1,57 @@
+// --------------------------------
+// * PARAMETRES GENERAUX
+// --------------------------------
+
+// COULEURS
+$color-primary: hsl(0, 0%, 100%);
+$color-secondary: hsl(276, 100%, 97%);
+$color-tertiary: #b02ceb;
+$color-back: #56235d;
+
+$color-font-primary: #cac3cd;
+
+$color-bg-standard: $color-secondary;
+$color-font-standard: $color-secondary;
+
+// POSITIONNEMENTS
+$global-page-max-width: 1400px;
+$main-max-width: 1000px;
+
+$mobile-right_left-margins: 30px;
+$desktop-right_left-margins: 80px;
+
+
+// --------------------------------
+// * PARAMETRES POLICES GENERAUX
+// --------------------------------
+    // -> Initialisation taille
+$font-standard-proportions: 62.5%;
+    // -> Définition du standard
+$font-standard-package: (
+    weight: 400,
+    size: 1.6,
+    family: 'Work Sans',
+    color: $color-font-primary
+);
+    // -> Map de définitions de toutes les sortes de polices utilisées
+$font-package: (
+    // ! /!\ NE PAS MODIFIER /!\ -- Pour modifier ce kit de police, modifier directement la map '$font-standard-package'
+    standard: (
+        weight: map-get($font-standard-package, weight),
+        size: map-get($font-standard-package, size),
+        family: map-get($font-standard-package, family),
+        color: map-get($font-standard-package, color),
+    ),// ! /!\ --------------------------------------------------
+    title: (
+        weight: 700,
+        size: 3.6,
+        family: 'Work Sans',
+        color: $color-back,
+    ),
+    section: (
+        weight: 600,
+        size: 1.8,
+        family: 'Work Sans',
+        color: $color-back,
+    )
+);

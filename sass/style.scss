@@ -1,0 +1,12 @@
+@import "./utils/variables";
+@import "./utils/medias-queries";
+@import "./utils/mixins";
+
+@import "./base/reset";
+@import "./base/base";
+
+@import "./components/animations";
+
+@import "./layout/header";
+
+@import "./pages/faq";
