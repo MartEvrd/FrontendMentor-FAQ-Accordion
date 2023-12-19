@@ -76,7 +76,7 @@ Temporary Items
 *.css
 *.htm
 *.html
-*.js
+# *.js
 *.jsp
 *.php
 *.rss
