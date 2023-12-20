@@ -85,12 +85,12 @@ header {
   width: 100%;
   height: 30vh;
   position: sticky;
-  background-image: url("../../assets/images/background-pattern-mobile.svg");
+  background-image: url("../assets/images/background-pattern-mobile.svg");
 }
 @media screen and (min-width: 481px) {
   header {
     height: 35vh;
-    background-image: url("../../assets/images/background-pattern-desktop.svg");
+    background-image: url("../assets/images/background-pattern-desktop.svg");
   }
 }
 
